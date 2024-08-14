@@ -49,7 +49,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     ),
                   ).paddingSymetric(horizontal: 12).paddingOnly(top: 32),
                   const Text(
-                    'Track your income and expenses, plan your budget, and get up-to-date information on currency and cryptocurrency exchange rates.',
+                    'Track your income and expenses, plan your budget.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFFFAFAFA),
@@ -62,8 +62,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     AppImages.welcome,
                     width: 250,
                   )
-                      .paddingOnly(left: 44, bottom: 30, top: 30)
-                      .align(Alignment.centerLeft),
+                      // .paddingOnly(left: 44, bottom: 30, top: 30)
+                      .align(Alignment.center),
                   GestureDetector(
                     onTap: () {
                       HiveHelper.setIsNotFirstTimeOpen();
