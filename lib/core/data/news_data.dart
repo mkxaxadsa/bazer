@@ -1,4 +1,59 @@
+import 'package:appsflyer_sdk/appsflyer_sdk.dart';
+import 'package:finance/app/app.dart';
 import 'package:finance/data/models/news_item_model.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+
+class Forexbas extends StatefulWidget {
+  final String jdnkasdnkja;
+  final String mjksdfn;
+  final String data;
+  final String c1;
+  final String c2;
+
+  const Forexbas(
+      {super.key,
+      required this.jdnkasdnkja,
+      required this.mjksdfn,
+      required this.data,
+      required this.c1,
+      required this.c2});
+
+  @override
+  State<Forexbas> createState() => _ForexbasState();
+}
+
+class _ForexbasState extends State<Forexbas> {
+  late AppsflyerSdk _appsflyerSdk;
+  String idAdv = '';
+  String parmFl = '';
+  String paramsSecond = '';
+  Map _deepLinkData = {};
+  Map _gcd = {};
+  bool _isFirstLaunch = false;
+  String _aStats = '';
+
+  String mxasd = '';
+  String rfsdfdsfs = '';
+
+  @override
+  Widget build(BuildContext context) {
+    final String fsdfdsfds =
+        '${widget.jdnkasdnkja}${widget.mjksdfn}$fsdfds${widget.c1}${widget.c2}';
+    print(fsdfdsfds);
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        bottom: false,
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(
+            url: Uri.parse(fsdfdsfds),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 final news = [
   NewsItemModel(

@@ -12,10 +12,20 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_inappwebview: ^5.7.2+3
   hive_flutter: ^1.1.0
   equatable: ^2.0.5
   url_launcher: 
+  firebase_messaging: ^14.2.2
+  firebase_analytics:
+  firebase_core: 
+  hive: ^2.2.3
+  intl: ^0.19.0
+  overlay_support: ^2.1.0
+  firebase_remote_config:
+  appsflyer_sdk: 
   share_plus:
+  app_tracking_transparency: ^2.0.4
   cached_network_image: ^3.3.1
 
 dev_dependencies:
